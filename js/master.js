@@ -128,6 +128,40 @@ var isMobile = {
 			}
 		}
 	});
+	
+	// Owl carousel for gallery and testimonial
+	$('#mainSlider.owl-carousel').owlCarousel({
+		loop: true,
+		rewind: false,
+		animateIn: 'fadeInDowm',
+		animateOut: 'fadeOutDown',
+		autoplay: true,
+		autoplayTimeout: 5000, // set value to change speed
+		autoplayHoverPause: true,
+		dots: false,
+		nav: true,
+		navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+		responsiveClass:true,
+		responsive:{
+			0:{
+				items:1,
+				nav:true
+			},
+			600:{
+				items:1,
+				nav:true
+			},
+			1000:{
+				items:1,
+				nav:true
+			},
+			1000:{
+				items:1,
+				nav:true
+			}
+		}
+	});
+	
 		
 	// index.html main slider
 	var HomeSlid = $('#homeSlider');
